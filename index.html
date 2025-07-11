@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aprendo Contigo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Pantalla Bienvenida -->
+  <section id="bienvenida" class="pantalla activa">
+    <h1>Bienvenido a Aprendo Contigo</h1>
+    <input id="nombre" type="text" placeholder="Escribe tu nombre" />
+    <div id="sexoSelector">
+      <button class="sexoBtn" data-sexo="nino">Niño</button>
+      <button class="sexoBtn" data-sexo="nina">Niña</button>
+    </div>
+    <div id="avatars">
+      <button class="avatar" data-emoji="👦">👦</button>
+      <button class="avatar" data-emoji="👧">👧</button>
+      <button class="avatar" data-emoji="🧑">🧑</button>
+      <button class="avatar" data-emoji="👩">👩</button>
+    </div>
+    <button id="botonIniciar" disabled>Iniciar</button>
+  </section>
+
+  <!-- Menú Principal -->
+  <section id="menuPrincipal" class="pantalla">
+    <h2 id="saludoUsuario">¡Hola!</h2>
+    <div class="areas">
+      <button class="areaBtn" data-area="matematicas">Matemáticas</button>
+      <button class="areaBtn" data-area="lenguaje">Lenguaje</button>
+      <button class="areaBtn" data-area="habilidades">Habilidades Sociales</button>
+      <button class="areaBtn" data-area="autonomia">Autonomía</button>
+      <button class="areaBtn" data-area="zonaFamiliar">Zona Familiar</button>
+    </div>
+  </section>
+
+  <!-- Aquí agregarás las pantallas de niveles y juegos (no incluyo por simplicidad, luego te ayudo con eso) -->
+
+  <!-- Contenedor medalla y confeti -->
+  <div id="medallaContainer" class="medallaOculta">
+    <div id="medalla">🏅</div>
+    <p>¡Felicidades! Completaste el área.</p>
+    <button id="btnCerrarMedalla">Cerrar</button>
+  </div>
+
+  <canvas id="confetiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
